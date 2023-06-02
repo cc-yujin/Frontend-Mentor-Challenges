@@ -1,0 +1,140 @@
+html {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*테두리 기준*/
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 30px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  border-radius: 7px;
+  overflow: hidden; /*색상 지정했을 때에도 radius 유지*/
+  box-shadow: 0px 0px 14px 1px rgb(208, 208, 208);
+}
+
+.itemTop {
+  background-color: white;
+  padding: 30px;
+}
+
+.itemTop h2 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 15px;
+  font-weight: 700;
+  /* font-size: 1.3rem; */
+}
+
+.itemTop h3 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.itemTop p {
+  color: rgb(158, 158, 158);
+  margin-bottom: 15px;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+
+.itemLeft {
+  background-color: hsl(179, 62%, 43%);
+  padding: 30px;
+}
+
+.itemLeft h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.itemLeft p {
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 10px;
+  /* border: 1px solid black; */
+}
+
+.itemLeft span {
+  color: white;
+  font-size: 2.5rem;
+  margin-right: 10px;
+}
+
+.itemLeft a {
+  color: white;
+}
+
+.itemLeft .button {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: hsl(71, 73%, 54%);
+  box-shadow: 0px 5px 10px 1px rgba(88, 88, 88, 0.249);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 100%;
+  padding: 15px;
+  margin-top: 25px;
+}
+
+.itemRight {
+  background-color: hsl(179, 52%, 51%);
+  padding: 30px;
+  
+}
+
+.itemRight h3 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: rgb(255, 255, 255);
+}
+
+.itemRight p {
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+  font-size: 0,7rem;
+  line-height: 1.4rem;
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr ;
+  }
+
+  .itemTop{
+    grid-area: 1/ 1/ 2/ 3;
+  }
+}
